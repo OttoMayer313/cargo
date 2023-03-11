@@ -23,6 +23,7 @@ pub struct VersionInfo {
     pub commit_info: Option<CommitInfo>,
 }
 
+//Display VersionInfo
 impl fmt::Display for VersionInfo {
     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
         write!(f, "{}", self.version)?;
